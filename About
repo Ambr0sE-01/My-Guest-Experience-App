@@ -1,0 +1,75 @@
+🏨 Guest Experience App – Salesforce Project
+The Guest Experience App is a comprehensive end-to-end Salesforce application designed to streamline resort operations and enhance guest satisfaction. This project showcases a real-world implementation using Salesforce Admin and Developer tools, with a strong focus on automation, data integrity, user experience, and reporting.
+
+🔧 Key Features
+🔹 Custom Data Model
+Created four custom objects: Guest Profile, Reservation, Service Request, and Feedback
+
+Configured relevant fields, relationships, tabs, and page layouts
+
+🔹 UI & UX Enhancements
+Developed record types and dynamic page layouts for Service Request object
+
+Implemented Quick Actions and customized List Views for faster navigation
+
+🔹 Access & Security Configuration
+Set up Custom Profiles for Concierge and Management teams
+
+Defined Role Hierarchy and Organization-Wide Defaults (OWDs)
+
+Created and assigned Permission Sets for specific feature access
+
+🔹 B2B Sales Integration
+Customized standard Lead and Opportunity objects with new fields
+
+Built B2B Sales Page Layouts and configured Sales Stages
+
+Mapped fields from Lead to Opportunity to support smooth lead conversion
+
+Built a dedicated B2B Sales App with a tailored Lightning Record Page
+
+🔹 Automation with Salesforce Flow
+Schedule-Triggered Flow: Sends personalized birthday greetings to guests
+
+Screen Flow: Collects guest feedback after checkout via a guided UI
+
+🔹 Data Quality & Migration
+Implemented validation rules for logical reservation and checkout dates
+
+Migrated historical Guest and Reservation data using the Data Import Wizard
+
+🔹 Reporting & Analytics
+Created a Reports folder with:
+
+Two Reservation reports
+
+One Service Request report
+
+Built a Lightning Dashboard showcasing key service metrics
+
+🎯 Outcomes
+Enhanced guest satisfaction through personalized interactions
+
+Improved staff efficiency via automation and streamlined data entry
+
+Delivered actionable insights with real-time reporting and dashboards
+
+Successfully showcased core Salesforce Admin and Developer skills
+
+🛠️ Technologies Used
+Salesforce Sales Cloud
+
+Flow Builder (Screen Flow, Scheduled Flow)
+
+Validation Rules
+
+Lightning App Builder
+
+Data Import Wizard
+
+Reports & Dashboards
+
+Profiles, Roles, Permission Sets
+
+Feel free to clone or fork the project structure or use it as inspiration for your own Salesforce portfolio projects!
+
