@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Custom object to manage guest service requests.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Closed_Date__c</fullName>
+        <description>The date and time when the service request was closed.</description>
+        <label>Closed Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Details__c</fullName>
+        <description>Specific details or preferences regarding the service request.</description>
+        <label>Details</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Guest__c</fullName>
+        <description>The guest associated with the service request.</description>
+        <label>Guest</label>
+        <referenceTo>Guest_Profile__c</referenceTo>
+        <relationshipLabel>Service Requests</relationshipLabel>
+        <relationshipName>Service_Requests</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Request_Age__c</fullName>
+        <description>Calculates the age of the service request if it&apos;s not closed.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Closed_Date__c), TODAY() - DATEVALUE(CreatedDate), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Request Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Request_Type__c</fullName>
+        <description>The type of service requested, such as spa appointment, dining reservation, activity booking, etc.</description>
+        <label>Request Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Adventure Activity Booking</fullName>
+                    <default>false</default>
+                    <label>Adventure Activity Booking</label>
+                </value>
+                <value>
+                    <fullName>Childcare Services</fullName>
+                    <default>false</default>
+                    <label>Childcare Services</label>
+                </value>
+                <value>
+                    <fullName>Dining Reservation</fullName>
+                    <default>false</default>
+                    <label>Dining Reservation</label>
+                </value>
+                <value>
+                    <fullName>Event or Party Planning</fullName>
+                    <default>false</default>
+                    <label>Event or Party Planning</label>
+                </value>
+                <value>
+                    <fullName>Fitness and Wellness Services</fullName>
+                    <default>false</default>
+                    <label>Fitness and Wellness Services</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Room Amenity Request</fullName>
+                    <default>false</default>
+                    <label>Room Amenity Request</label>
+                </value>
+                <value>
+                    <fullName>Spa Appointment</fullName>
+                    <default>false</default>
+                    <label>Spa Appointment</label>
+                </value>
+                <value>
+                    <fullName>Special Occasion Arrangement</fullName>
+                    <default>false</default>
+                    <label>Special Occasion Arrangement</label>
+                </value>
+                <value>
+                    <fullName>Transportation Assistance</fullName>
+                    <default>false</default>
+                    <label>Transportation Assistance</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Resolution_Details__c</fullName>
+        <description>Capture resolution details of the request.</description>
+        <label>Resolution Details</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>The current status of the service request (Open, In Progress, Completed).</description>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Service Request</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Closed_Service_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>Guest__c</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Details__c</columns>
+        <columns>Closed_Date__c</columns>
+        <columns>Resolution_Details__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </filters>
+        <label>Closed Service Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Open_Service_Requests</fullName>
+        <columns>NAME</columns>
+        <columns>Guest__c</columns>
+        <columns>Status__c</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Details__c</columns>
+        <columns>Request_Age__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Open,In Progress</value>
+        </filters>
+        <label>Open Service Requests</label>
+    </listViews>
+    <nameField>
+        <displayFormat>SR-{0000}</displayFormat>
+        <label>Service Request Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Service Requests</pluralLabel>
+    <recordTypes>
+        <fullName>Concierge_Request</fullName>
+        <active>true</active>
+        <description>Record type for Concierge related service request</description>
+        <label>Concierge Request</label>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Adventure Activity Booking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Childcare Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dining Reservation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event or Party Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fitness and Wellness Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Room Amenity Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spa Appointment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Occasion Arrangement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation Assistance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Maintenance_Request</fullName>
+        <active>true</active>
+        <description>Record Type for maintenance-related service requests</description>
+        <label>Maintenance Request</label>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Adventure Activity Booking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Childcare Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dining Reservation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event or Party Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fitness and Wellness Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Room Amenity Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spa Appointment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Occasion Arrangement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation Assistance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>
